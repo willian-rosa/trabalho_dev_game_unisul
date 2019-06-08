@@ -6,7 +6,7 @@ public class Personagem : MonoBehaviour
 {
     
     private float velocidadeDescolamento = 6;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,6 @@ public class Personagem : MonoBehaviour
         float deslocX = Input.GetAxisRaw("Horizontal");
         float addX = deslocX * velocidadeDescolamento * Time.deltaTime;
         float novoX = transform.position.x + addX;
-        
         
         float deslocY = Input.GetAxisRaw("Vertical");
         float addY = deslocY * velocidadeDescolamento * Time.deltaTime;
@@ -34,10 +33,58 @@ public class Personagem : MonoBehaviour
         {
             novoY = transform.position.y;
         }
-        
 
         transform.position = new Vector3(novoX, novoY, transform.position.z);
 
+        float rotatacaoZ = rotacao(transform.rotation.z, deslocX, deslocY);
+
+        if (transform.rotation.z != rotatacaoZ)
+        {
+            transform.eulerAngles = new Vector3(0, 0, rotatacaoZ);
+        }
+    }
+
+
+    float rotacao(float rotatacaoZ, float deslocX, float deslocY)
+    {
+        if (deslocX == 1)
+        {
+            rotatacaoZ = 270;
+        } else if (deslocX == -1)
+        {
+            rotatacaoZ = 90;
+        }
+        
+        if (deslocY == 1)
+        {
+            if (deslocX == 1)
+            {
+                rotatacaoZ = 315;
+            } else if (deslocX == -1)
+            {
+                rotatacaoZ = 45;
+            }
+            else
+            {
+                rotatacaoZ = 0;
+            }
+            
+        } else if (deslocY == -1)
+        {
+            if (deslocX == 1)
+            {
+                rotatacaoZ = 255;
+            } else if (deslocX == -1)
+            {
+                rotatacaoZ = 135;
+            }
+            else
+            {
+                rotatacaoZ = 180;
+            }
+        }
+
+        return rotatacaoZ;
     }
     
 }
