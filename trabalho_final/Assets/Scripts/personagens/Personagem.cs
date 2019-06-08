@@ -5,13 +5,13 @@ using UnityEngine;
 public class Personagem : MonoBehaviour
 {
     
-    private float velocidadeDescolamento = 6;
+    private float velocidadeDescolamento = 2f;
 
     // Start is called before the first frame update
     void Start()
     {
         
-    }
+    } 
 
     // Update is called once per frame
     void Update()
