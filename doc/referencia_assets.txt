@@ -15,3 +15,8 @@ Personagem
 Tutorial de Luz
 	https://ncase.me/sight-and-light/
 	https://www.redblobgames.com/articles/visibility/
+
+	https://www.gamasutra.com/blogs/RobWare/20180226/313491/Fast_2D_shadows_in_Unity_using_1D_shadow_mapping.php
+
+	https://www.youtube.com/watch?v=P9e2Sy875S8
+	https://roy-t.nl/2014/02/27/2d-lighting-and-shadows-preview.html
