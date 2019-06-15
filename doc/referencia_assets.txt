@@ -10,9 +10,9 @@ Personagem
 	https://opengameart.org/content/top-down-shooter-character
 
 
-
-
 Tutorial de Luz
+	https://forum.unity.com/threads/generate-2d-collider-around-shadows.238451/
+
 	https://ncase.me/sight-and-light/
 	https://www.redblobgames.com/articles/visibility/
 
