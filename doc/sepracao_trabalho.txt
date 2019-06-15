@@ -1,0 +1,26 @@
+Design
+
+	- poster (Gui)
+
+	- 4 cenario (Bia, Gui)
+		1 para a primeira fase (casa inteira) 
+		1 para a segunda fase (casa inteira)
+		2 para a terceira fase (casa, porão)  
+
+	- hud do jogo (remover label bateria)
+
+	- Menu (Bia)
+		play
+		creditos
+		sair
+
+Desenvolvimento
+	- colisões objetos (Bia, Gui)
+	- mensagem game over (Bia)
+	- mensagem vitoria (Bia)
+	- musicas (Bia)
+	
+	- trocar cenarios e fases (Will)
+	- colisões paredes (will)
+	- luz lanterna não atravesar a parede (Will)
+	- Fatasma (Will)
