@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -13,9 +14,16 @@ public class FieldOfView : MonoBehaviour {
 
     [HideInInspector]
     public List<Transform> visibleTargets = new List<Transform>();
+    
+    public float meshResolution;
 
     void Start() {
         StartCoroutine ("FindTargetsWithDelay", .2f);
+    }
+
+    private void Update()
+    {
+        DrawFieldOfView();
     }
 
 
@@ -42,6 +50,18 @@ public class FieldOfView : MonoBehaviour {
                     visibleTargets.Add (target);
                 }
             }
+        }
+    }
+
+    void DrawFieldOfView()
+    {
+        int stepCount = Mathf.RoundToInt(viewAngle * meshResolution);
+        float stepAngleSize = viewAngle / stepCount;
+
+        for (int i = 0; i <= stepCount; i++)
+        {
+            float angle = transform.eulerAngles.y - viewAngle / 2  + stepAngleSize * i;
+            Debug.DrawLine(transform.position, transform.position + DirFromAngle(angle, true) * viewRadius, Color.magenta);
         }
     }
 
