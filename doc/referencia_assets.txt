@@ -10,8 +10,23 @@ Personagem
 	https://opengameart.org/content/top-down-shooter-character
 
 
-
-
 Tutorial de Luz
+
+	https://www.youtube.com/watch?v=rQG9aUWarwE
+
+	https://github.com/SSS135/Light2D
+
+
+	https://forum.unity.com/threads/generate-2d-collider-around-shadows.238451/
+
 	https://ncase.me/sight-and-light/
 	https://www.redblobgames.com/articles/visibility/
+
+	https://www.gamasutra.com/blogs/RobWare/20180226/313491/Fast_2D_shadows_in_Unity_using_1D_shadow_mapping.php
+
+	https://www.youtube.com/watch?v=P9e2Sy875S8
+	https://roy-t.nl/2014/02/27/2d-lighting-and-shadows-preview.html
+
+	https://unitycoder.com/blog/2014/10/12/2d-visibility-shadow-for-unity-indie/
+
+	http://unitycoder.com/blog/2012/02/15/raycast-realtime-visibility-2-0/
