@@ -15,6 +15,8 @@ public class FieldOfView : MonoBehaviour
     public float meshResolution;
     public int edgeResolveIterations;
     public float edgeDstThreshold;
+    
+    public float maskCutawayDst = .1f;
 
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
@@ -75,8 +77,6 @@ public class FieldOfView : MonoBehaviour
         {
             float angle = transform.eulerAngles.y - viewAngle / 2 + stepAngleSize * i;
 
-//            Debug.DrawLine(transform.position, transform.position + DirFromAngle(angle, true) * viewRadius, Color.yellow);
-
             ViewCastInfo newViewCast = ViewCast(angle);
 
             if (i > 0)
@@ -87,7 +87,6 @@ public class FieldOfView : MonoBehaviour
                 if (oldViewCast.hit != newViewCast.hit ||
                     (oldViewCast.hit && newViewCast.hit && edgeDstThresholdExceeded))
                 {
-//                    print("ENTROU");
 
                     EdgeInfo edge = FindEdge(oldViewCast, newViewCast);
                     if (edge.pointA != Vector3.zero)
@@ -114,7 +113,7 @@ public class FieldOfView : MonoBehaviour
         vertices[0] = Vector3.zero;
         for (int i = 0; i < vertexCount - 1; i++)
         {
-            vertices[i + 1] = transform.InverseTransformPoint(viewPoints[i]);
+            vertices [i + 1] = transform.InverseTransformPoint(viewPoints [i]) + Vector3.forward * maskCutawayDst;
 
             if (i < vertexCount - 2)
             {
@@ -165,16 +164,11 @@ public class FieldOfView : MonoBehaviour
     {
         Vector3 dir = DirFromAngle(globalAngle, true);
 
-//        RaycastHit hit;
-
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, viewRadius, obstacleMask);
-
-//        print(hit2d != null && hit2d.collider);
 
 
         if (hit != null && hit.collider)
         {
-            print("entrou");
 
             return new ViewCastInfo(true, hit.point, hit.distance, globalAngle);
         }
