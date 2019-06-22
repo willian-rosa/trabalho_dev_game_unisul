@@ -12,4 +12,8 @@ public class carregaCena : MonoBehaviour
     public void sair() {
         Application.Quit();
     }
+
+    public void playEfeito(AudioSource efeitoBotao) {
+        efeitoBotao.Play();
+    }
 }

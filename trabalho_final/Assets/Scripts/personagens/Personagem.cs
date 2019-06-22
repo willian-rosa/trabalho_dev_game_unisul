@@ -16,7 +16,9 @@ public class Personagem : MonoBehaviour
 
     public Text vlBateria;
     public GameObject objLanterna;
-    
+
+    public Sprite[] spritesBateria;
+    public Image bateria;
 
     // Start is called before the first frame update
     void Start()
@@ -68,7 +70,8 @@ public class Personagem : MonoBehaviour
         {
             tempoUsoLanterna = Time.time;
             cargaBateria-= 1;
-            vlBateria.text = cargaBateria + "s";
+            bateria.sprite = spritesBateria[cargaBateria];
+            //Bateria.text = cargaBateria + "s";
         } else if (cargaBateria <= 1f && Time.time -tempoLanternaPiscando >= 0.15f)
         {
             tempoLanternaPiscando = Time.time;
