@@ -8,19 +8,28 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Editor" t="Include">
-          <e p="FieldOfViewEditor.cs" t="Include" />
+          <e p="LightEditor.cs" t="Include" />
+          <e p="LightSourceEditor.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="Shadow" t="Include">
-            <e p="Puppet.cs" t="Include" />
-            <e p="ShadowCollision.cs" t="Include" />
+          <e p="carregaCena.cs" t="Include" />
+          <e p="light" t="Include">
+            <e p="LightSettings2D.cs" t="Include" />
+            <e p="LightSource.cs" t="Include" />
+            <e p="ShadowController.cs" t="Include" />
           </e>
           <e p="personagens" t="Include">
-            <e p="FieldOfView.cs" t="Include" />
+            <e p="Controle.cs" t="Include" />
             <e p="Personagem.cs" t="Include" />
           </e>
         </e>
-        <e p="carregaCena.cs" t="Include" />
+        <e p="Shaders" t="Include">
+          <e p="Accumulation.shader" t="Include" />
+          <e p="Blend.shader" t="Include" />
+          <e p="Distance.shader" t="Include" />
+          <e p="Light.shader" t="Include" />
+          <e p="Occlusion.shader" t="Include" />
+        </e>
       </e>
       <e p="Temp/bin" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />

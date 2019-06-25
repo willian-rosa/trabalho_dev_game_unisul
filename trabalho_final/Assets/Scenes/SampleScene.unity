@@ -628,6 +628,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.06, y: 0.5}
   m_EdgeRadius: 0
+--- !u!1 &419599180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 178984, guid: 8ffb59431ae8e9441a2ffdaeb9d44f41,
+    type: 3}
+  m_PrefabInstance: {fileID: 67920246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &499928146
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,7 +869,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -879,7 +885,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.973296
+  orthographic size: 3.9539275
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1049,7 +1055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &857067009
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2461,6 +2467,7 @@ GameObject:
   - component: {fileID: 1924850225}
   - component: {fileID: 1924850224}
   - component: {fileID: 1924850226}
+  - component: {fileID: 1924850228}
   - component: {fileID: 1924850227}
   m_Layer: 0
   m_Name: Personagem
@@ -2545,7 +2552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vlBateria: {fileID: 1707848555}
-  objLanterna: {fileID: 0}
+  objLanterna: {fileID: 419599180}
   spritesBateria:
   - {fileID: 21300000, guid: d49e88fdd6368314487c9768cddbd048, type: 3}
   - {fileID: 21300000, guid: dcc504b00fd1daa47bbf8f6f8526e8db, type: 3}
@@ -2579,3 +2586,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.01, y: 4.08}
   m_EdgeRadius: 0
+--- !u!114 &1924850228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924850223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6aaa366b7a3ca5f69e5058814ec2d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

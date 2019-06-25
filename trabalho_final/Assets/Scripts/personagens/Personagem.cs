@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 public class Personagem : MonoBehaviour
 {
-    
-    private float velocidadeDescolamento = 2f;
-    private int duracaoBateria = 5;
+    private int duracaoBateria = 10;
 
     private int cargaBateria;
     private float tempoUsoLanterna;
@@ -19,6 +17,8 @@ public class Personagem : MonoBehaviour
 
     public Sprite[] spritesBateria;
     public Image bateria;
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -29,34 +29,6 @@ public class Personagem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var deslocX = Input.GetAxisRaw("Horizontal");
-        var addX = deslocX * velocidadeDescolamento * Time.deltaTime;
-        var novoX = transform.position.x + addX;
-        
-        var deslocY = Input.GetAxisRaw("Vertical");
-        var addY = deslocY * velocidadeDescolamento * Time.deltaTime;
-        var novoY = transform.position.y + addY;
-
-        if (novoX > 9f || novoX < -9f)
-        {
-            novoX = transform.position.x;
-        }
-        
-        if (novoY > 4.7f || novoY < -4.7f)
-        {
-            novoY = transform.position.y;
-        }
-
-        transform.position = new Vector3(novoX, novoY, transform.position.z);
-
-        var rotatacaoZ = rotacao(transform.rotation.z, deslocX, deslocY);
-
-        if (transform.rotation.z != rotatacaoZ)
-        {
-            transform.eulerAngles = new Vector3(0, 0, rotatacaoZ);
-        }
-
-        ///////////////////////////////////////////// Fim movimentação
         
         // Acendendo lanterna
         if (Input.GetButtonDown("Jump")) { acenderLanterna();}
@@ -94,47 +66,4 @@ public class Personagem : MonoBehaviour
         tempoLanternaPiscando = 1;
     }
 
-
-    float rotacao(float rotatacaoZ, float deslocX, float deslocY)
-    {
-        if (deslocX == 1)
-        {
-            rotatacaoZ = 270;
-        } else if (deslocX == -1)
-        {
-            rotatacaoZ = 90;
-        }
-        
-        if (deslocY == 1)
-        {
-            if (deslocX == 1)
-            {
-                rotatacaoZ = 315;
-            } else if (deslocX == -1)
-            {
-                rotatacaoZ = 45;
-            }
-            else
-            {
-                rotatacaoZ = 0;
-            }
-            
-        } else if (deslocY == -1)
-        {
-            if (deslocX == 1)
-            {
-                rotatacaoZ = 255;
-            } else if (deslocX == -1)
-            {
-                rotatacaoZ = 135;
-            }
-            else
-            {
-                rotatacaoZ = 180;
-            }
-        }
-
-        return rotatacaoZ;
-    }
-    
 }
