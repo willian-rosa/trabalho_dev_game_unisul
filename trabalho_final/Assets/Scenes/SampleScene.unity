@@ -436,7 +436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 194114, guid: d2e00ea6fd739924ba9e1c73090b7a86, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 476584, guid: d2e00ea6fd739924ba9e1c73090b7a86, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1286,7 +1286,13 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -6.201843, y: 1.9080968}
+  - {x: -9.072781, y: -1.4462478}
+  - {x: -8.080831, y: -1.455207}
+  - {x: -7.9727545, y: 2.923887}
+  - {x: -7.125055, y: 2.9409878}
+  - {x: -7.1433907, y: 0.44626987}
+  - {x: -6.413138, y: 0.45565867}
+  - {x: -6.3838854, y: 1.9224105}
   - {x: -1.3794637, y: 1.9365008}
   - {x: -1.3819182, y: -0.25261092}
   - {x: 0.6030764, y: -0.21341646}
