@@ -196,7 +196,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117749837}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4c4c6aa06991ee04b8d8e842cfc4b961, type: 3}
@@ -292,7 +292,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117749837}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!1 &129210738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2010,12 +2010,12 @@ PrefabInstance:
     - target: {fileID: 6527864647698135179, guid: a4169c8f47454860eae2cdf0caec2fd0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.16
+      value: 9.99
       objectReference: {fileID: 0}
     - target: {fileID: 6527864647698135179, guid: a4169c8f47454860eae2cdf0caec2fd0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.56
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 6527864647698135179, guid: a4169c8f47454860eae2cdf0caec2fd0,
         type: 3}
@@ -2444,12 +2444,12 @@ PrefabInstance:
     - target: {fileID: 6527864647698135179, guid: a4169c8f47454860eae2cdf0caec2fd0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.56
+      value: 3.09
       objectReference: {fileID: 0}
     - target: {fileID: 6527864647698135179, guid: a4169c8f47454860eae2cdf0caec2fd0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.98
+      value: 3.66
       objectReference: {fileID: 0}
     - target: {fileID: 6527864647698135179, guid: a4169c8f47454860eae2cdf0caec2fd0,
         type: 3}
@@ -2469,12 +2469,12 @@ PrefabInstance:
     - target: {fileID: 6527864647698135179, guid: a4169c8f47454860eae2cdf0caec2fd0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6527864647698135179, guid: a4169c8f47454860eae2cdf0caec2fd0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6527864647698135179, guid: a4169c8f47454860eae2cdf0caec2fd0,
         type: 3}
@@ -2494,7 +2494,17 @@ PrefabInstance:
     - target: {fileID: 6527864647698135179, guid: a4169c8f47454860eae2cdf0caec2fd0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3659181217982130655, guid: a4169c8f47454860eae2cdf0caec2fd0,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.35502416
+      objectReference: {fileID: 0}
+    - target: {fileID: 3659181217982130655, guid: a4169c8f47454860eae2cdf0caec2fd0,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.7984456
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4169c8f47454860eae2cdf0caec2fd0, type: 3}
@@ -2985,7 +2995,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5554724, y: -0.35649312}
+  m_Offset: {x: 0.64325553, y: -0.35649312}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2996,7 +3006,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1109445, y: 1.364866}
+  m_Size: {x: 1.9353784, y: 1.364866}
   m_EdgeRadius: 0
 --- !u!1001 &1220894195
 PrefabInstance:
@@ -3259,7 +3269,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222198239}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.04, y: 1.73, z: 0}
+  m_LocalPosition: {x: 8.27, y: 2.82, z: 0}
   m_LocalScale: {x: 0.10653358, y: 0.10653358, z: 0.10653358}
   m_Children:
   - {fileID: 1220894197}
