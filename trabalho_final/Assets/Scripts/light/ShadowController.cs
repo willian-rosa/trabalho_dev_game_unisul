@@ -52,16 +52,9 @@ public class ShadowController : MonoBehaviour
 	Material lookupMat;
 	Material lightMat;
 	Material lightAccumulation;
-
-    //Shaders
-    [SerializeField] Shader occ;
-    [SerializeField] Shader lookupMatShader;
-    [SerializeField] Shader lightMatShader;
-    [SerializeField] Shader lightAccumulationShader;
-
-
-    //List if lit objects and occluding objects
-    List<LightSettings2D> lit;
+	
+	//List if lit objects and occluding objects
+	List<LightSettings2D> lit;
 	List<LightSettings2D> occluders;
 
 	//The command buffer to use
@@ -90,14 +83,14 @@ public class ShadowController : MonoBehaviour
 		occluders = new List<LightSettings2D>();
 		lit = new List<LightSettings2D>();
 
-        //Populate materials with the appropriate shaders
-        occlusion = new Material(occ);
-        lookupMat = new Material(lookupMatShader);
-        lightMat = new Material(lightMatShader);
-        lightAccumulation = new Material(lightAccumulationShader);
+		//Populate materials with the appropriate shaders
+		occlusion = new Material(Shader.Find("Hidden/2DLighting/Occlusion"));
+		lookupMat = new Material(Shader.Find("Hidden/2DLighting/Distance"));
+		lightMat = new Material(Shader.Find("Hidden/2DLighting/Light"));
+		lightAccumulation = new Material(Shader.Find("Hidden/2DLighting/Accumulation"));
 
-        //Create RTI's for easy reference
-        lightmap = new RenderTargetIdentifier(Shader.PropertyToID("Lightmap_RT"));
+		//Create RTI's for easy reference
+		lightmap = new RenderTargetIdentifier(Shader.PropertyToID("Lightmap_RT"));
 		occlusionMap = new RenderTargetIdentifier(Shader.PropertyToID("Occluders_RT"));
 		lookupMap = new RenderTargetIdentifier(Shader.PropertyToID("Lookup_RT"));
 		lightAreaMap = new RenderTargetIdentifier(Shader.PropertyToID("LightArea_RT"));

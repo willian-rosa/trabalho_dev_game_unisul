@@ -12,6 +12,9 @@
           <e p="LightSourceEditor.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="bateria" t="Include">
+            <e p="NovaBateria.cs" t="Include" />
+          </e>
           <e p="carregaCena.cs" t="Include" />
           <e p="light" t="Include">
             <e p="LightSettings2D.cs" t="Include" />

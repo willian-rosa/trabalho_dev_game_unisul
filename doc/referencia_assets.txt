@@ -13,6 +13,22 @@ Switch
 Personagem
 	https://opengameart.org/content/top-down-shooter-character
 
+Bateria
+	https://www.iconfinder.com/icons/3964929/battery_battery_level_charge_full_battery_power_icon
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
 
 Tutorial de Luz
 
