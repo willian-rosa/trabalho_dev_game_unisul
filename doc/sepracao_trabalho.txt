@@ -9,18 +9,18 @@ Design
 
 	- hud do jogo (remover label bateria)
 
-	- Menu (Bia)
+	- Menu (Bia) - ok
 		play
 		creditos
 		sair
 
 Desenvolvimento
-	- colisões objetos (Bia, Gui)
-	- mensagem game over (Bia)
-	- mensagem vitoria (Bia)
-	- musicas (Bia)
+	- colisões objetos (Bia, Gui) - ok
+	- mensagem game over (Bia) - ok
+	- mensagem vitoria (Bia) - ok 
+	- musicas (Bia) - ok
 	
 	- trocar cenarios e fases (Will)
-	- colisões paredes (will)
-	- luz lanterna não atravesar a parede (Will)
+	- colisões paredes (will) - ok 
+	- luz lanterna não atravesar a parede (Will) - ok
 	- Fatasma (Will)

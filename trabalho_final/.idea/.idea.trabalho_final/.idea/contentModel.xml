@@ -20,6 +20,7 @@
           </e>
           <e p="personagens" t="Include">
             <e p="Controle.cs" t="Include" />
+            <e p="Interruptor.cs" t="Include" />
             <e p="Personagem.cs" t="Include" />
           </e>
         </e>
