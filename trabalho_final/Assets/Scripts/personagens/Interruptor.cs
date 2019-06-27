@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Interruptor : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Interruptor : MonoBehaviour
     private bool missaoCompletada;
     private Camera viewCamera;
     private float tempoMissaoCompletada;
+    public GameObject txtInterruptor;
 
     public Text labelMissaoCompleta;
     public bool exibirCenaVitoria;
@@ -28,8 +30,14 @@ public class Interruptor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dentro && Input.GetButtonDown("Fire1"))
+
+        if (dentro && !missaoCompletada) {
+            txtInterruptor.SetActive(true);
+        }
+
+        if (dentro && Input.GetKeyDown(KeyCode.F))
         {
+
             foreach (var lampada in lampadas)
             {
                 lampada.SetActive(true);
@@ -38,7 +46,7 @@ public class Interruptor : MonoBehaviour
             Controle.movimentarCamerera = false;
             tempoMissaoCompletada = Time.time; 
             missaoCompletada = true;
-
+            txtInterruptor.SetActive(false);
             labelMissaoCompleta.text = "Missão Completa";
             Personagem.permiteGameOver = false;
 
@@ -62,6 +70,9 @@ public class Interruptor : MonoBehaviour
             {
                 SceneManager.LoadScene("fase2");
             }
+        }
+        if (viewCamera.orthographicSize == 7.513924f) {
+            SceneManager.LoadScene(2);
         }
     }
 
