@@ -322,7 +322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CastShadows: 1
-  RecieveShadows: 0
+  RecieveShadows: 1
+  litShader: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
 --- !u!212 &72952907
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -698,7 +699,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CastShadows: 1
-  RecieveShadows: 0
+  RecieveShadows: 1
+  litShader: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
 --- !u!212 &334914793
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -845,6 +847,11 @@ PrefabInstance:
       propertyPath: Priority
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6149924652101584325, guid: a4169c8f47454860eae2cdf0caec2fd0,
+        type: 3}
+      propertyPath: litShader
+      value: 
+      objectReference: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
     m_RemovedComponents:
     - {fileID: 871922176658866720, guid: a4169c8f47454860eae2cdf0caec2fd0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a4169c8f47454860eae2cdf0caec2fd0, type: 3}
@@ -1242,7 +1249,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CastShadows: 1
-  RecieveShadows: 0
+  RecieveShadows: 1
+  litShader: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
 --- !u!212 &532066906
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1483,6 +1491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CastShadows: 0
   RecieveShadows: 1
+  litShader: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
 --- !u!1 &716902880
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,7 +1888,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CastShadows: 1
-  RecieveShadows: 0
+  RecieveShadows: 1
+  litShader: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
 --- !u!212 &947803610
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2170,6 +2180,11 @@ PrefabInstance:
       propertyPath: Priority
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6149924652101584325, guid: a4169c8f47454860eae2cdf0caec2fd0,
+        type: 3}
+      propertyPath: litShader
+      value: 
+      objectReference: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
     m_RemovedComponents:
     - {fileID: 871922176658866720, guid: a4169c8f47454860eae2cdf0caec2fd0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a4169c8f47454860eae2cdf0caec2fd0, type: 3}
@@ -2219,7 +2234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CastShadows: 1
-  RecieveShadows: 0
+  RecieveShadows: 1
+  litShader: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
 --- !u!212 &1152028473
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2366,6 +2382,11 @@ PrefabInstance:
       propertyPath: Priority
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6149924652101584325, guid: a4169c8f47454860eae2cdf0caec2fd0,
+        type: 3}
+      propertyPath: litShader
+      value: 
+      objectReference: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
     m_RemovedComponents:
     - {fileID: 871922176658866720, guid: a4169c8f47454860eae2cdf0caec2fd0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a4169c8f47454860eae2cdf0caec2fd0, type: 3}
@@ -2547,7 +2568,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CastShadows: 1
-  RecieveShadows: 0
+  RecieveShadows: 1
+  litShader: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
 --- !u!212 &1300591303
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2654,7 +2676,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CastShadows: 1
-  RecieveShadows: 0
+  RecieveShadows: 1
+  litShader: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
 --- !u!212 &1308670577
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2743,6 +2766,133 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.06, y: 0.5}
   m_EdgeRadius: 0
+--- !u!1 &1416861205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1416861206}
+  - component: {fileID: 1416861207}
+  m_Layer: 0
+  m_Name: efeitoFantasma
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1416861206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416861205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1924850225}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1416861207
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416861205}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 43064b1447d8896459b0ecbd459dd06f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.25
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1456820629 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 476584, guid: d2e00ea6fd739924ba9e1c73090b7a86,
@@ -2795,7 +2945,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CastShadows: 1
-  RecieveShadows: 0
+  RecieveShadows: 1
+  litShader: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
 --- !u!212 &1494097257
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3431,6 +3582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CastShadows: 0
   RecieveShadows: 1
+  litShader: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
 --- !u!1001 &1701828133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3777,7 +3929,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CastShadows: 1
-  RecieveShadows: 0
+  RecieveShadows: 1
+  litShader: {fileID: 4800000, guid: b93a2367aeb04944e88ded354411747e, type: 3}
 --- !u!212 &1878132628
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3933,6 +4086,7 @@ Transform:
   m_LocalScale: {x: 0.10653358, y: 0.10653358, z: 0.10653358}
   m_Children:
   - {fileID: 325050507}
+  - {fileID: 1416861206}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3963,6 +4117,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 792155c1c8be39a409cafe38c1770dde, type: 3}
   - {fileID: 21300000, guid: 06bc514a9b8d9cc439fe240dd877eb77, type: 3}
   bateria: {fileID: 1851386122}
+  efeitoFantasma: {fileID: 1416861205}
 --- !u!61 &1924850227
 BoxCollider2D:
   m_ObjectHideFlags: 0

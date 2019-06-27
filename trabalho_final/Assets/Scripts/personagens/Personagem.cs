@@ -20,6 +20,8 @@ public class Personagem : MonoBehaviour
 
     public Sprite[] spritesBateria;
     public Image bateria;
+
+    public GameObject efeitoFantasma;
     
     private float tempoLanternaApagada;
     
@@ -65,8 +67,24 @@ public class Personagem : MonoBehaviour
                 bateria.sprite = spritesBateria[cargaBateria];
             }
 
+            if (cargaBateria == 3f) {
+                efeitoFantasma.GetComponent<AudioSource>().volume = 0.25f;
+                efeitoFantasma.GetComponent<AudioSource>().Play();
+            }
+
+            if (cargaBateria == 2f)
+            {
+                efeitoFantasma.GetComponent<AudioSource>().volume = 0.5f;
+            }
+
+            if (cargaBateria == 1f)
+            {
+                efeitoFantasma.GetComponent<AudioSource>().volume = 0.75f;
+            }
+
         } else if (cargaBateria <= 1f && Time.time -tempoLanternaPiscando >= 0.15f)
         {
+
             tempoLanternaPiscando = Time.time;
             objLanterna.SetActive( ! objLanterna.activeSelf );
         }
@@ -76,6 +94,7 @@ public class Personagem : MonoBehaviour
             objLanterna.SetActive(false);
             usandoLanterna = false;
             tempoLanternaApagada = Time.time;
+            efeitoFantasma.GetComponent<AudioSource>().volume = 1f;
         }
 
         for (int i = 0; i < bateriasExtras.Length; i++)
@@ -108,6 +127,7 @@ public class Personagem : MonoBehaviour
     {
         if (quantidadeBateriasExtras > 0)
         {
+            efeitoFantasma.GetComponent<AudioSource>().Stop();
             objLanterna.SetActive(true);
             tempoUsoLanterna = Time.time;
             usandoLanterna = true;
