@@ -71,9 +71,6 @@ public class Interruptor : MonoBehaviour
                 SceneManager.LoadScene("fase2");
             }
         }
-        if (viewCamera.orthographicSize == 7.513924f) {
-            SceneManager.LoadScene(2);
-        }
     }
 
     public void OnTriggerEnter2D(Collider2D other)

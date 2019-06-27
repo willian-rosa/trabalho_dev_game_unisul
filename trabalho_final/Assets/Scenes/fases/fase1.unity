@@ -1468,6 +1468,7 @@ MonoBehaviour:
   - {fileID: 2081589802}
   txtInterruptor: {fileID: 833946420}
   labelMissaoCompleta: {fileID: 32832928}
+  exibirCenaVitoria: 0
 --- !u!114 &640413426
 MonoBehaviour:
   m_ObjectHideFlags: 0
