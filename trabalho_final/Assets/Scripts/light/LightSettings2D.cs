@@ -15,6 +15,10 @@ public class LightSettings2D : MonoBehaviour
 
 	//Material reference for the shaded version
 	Material lit;
+
+    //Shader
+    [SerializeField] Shader litShader;
+
 	//Material reference for the standard sprite material
 	Material standard;
 
@@ -22,7 +26,7 @@ public class LightSettings2D : MonoBehaviour
 	{
 		rend = GetComponent<SpriteRenderer>(); //Get sprite renderer
 		standard = rend.material; //Fill standard material reference
-		lit = new Material(Shader.Find("Hidden/2DLighting/Blend")); //Create lit material 
+		lit = new Material(litShader); //Create lit material 
 	}
 
 	void Update()
