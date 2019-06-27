@@ -12,6 +12,7 @@ public class Personagem : MonoBehaviour
     private bool usandoLanterna;
 
     public static int quantidadeBateriasExtras = 3;
+    public static bool permiteGameOver;
     
     public Text vlBateria;
     public GameObject objLanterna;
@@ -22,10 +23,14 @@ public class Personagem : MonoBehaviour
     
     private float tempoLanternaApagada;
     
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        quantidadeBateriasExtras = 3;
+        permiteGameOver = true;
+        
         acenderLanterna();
     } 
 
@@ -39,7 +44,7 @@ public class Personagem : MonoBehaviour
         if (usandoLanterna)
         {
             gerenciarConsumoBateria();
-        } else if (!usandoLanterna)
+        } else if (!usandoLanterna && permiteGameOver)
         {
             gerenciarFantasma();
         }

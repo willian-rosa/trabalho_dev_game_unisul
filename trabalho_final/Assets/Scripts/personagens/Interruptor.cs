@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Interruptor : MonoBehaviour
@@ -15,6 +16,7 @@ public class Interruptor : MonoBehaviour
     private float tempoMissaoCompletada;
 
     public Text labelMissaoCompleta;
+    public bool exibirCenaVitoria;
     
     
     // Start is called before the first frame update
@@ -38,14 +40,28 @@ public class Interruptor : MonoBehaviour
             missaoCompletada = true;
 
             labelMissaoCompleta.text = "Missão Completa";
+            Personagem.permiteGameOver = false;
 
         }
 
+        float segundosMC = Time.time - tempoMissaoCompletada;
+        
         if (missaoCompletada && 
-            (Time.time - tempoMissaoCompletada) < 3f && 
+            segundosMC < 3f && 
             viewCamera.orthographicSize < 8f
         ){
+            // afastando tela
             viewCamera.orthographicSize = viewCamera.orthographicSize + .02f;
+        } else if (missaoCompletada && segundosMC > 4f)
+        {
+            if (exibirCenaVitoria)
+            {
+                SceneManager.LoadScene("gameWin");
+            }
+            else
+            {
+                SceneManager.LoadScene("fase2");
+            }
         }
     }
 

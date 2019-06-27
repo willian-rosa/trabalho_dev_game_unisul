@@ -3185,7 +3185,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6aaa366b7a3ca5f69e5058814ec2d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeRotacao: 40
 --- !u!114 &1222198243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4520,6 +4519,7 @@ MonoBehaviour:
   - {fileID: 865444352}
   - {fileID: 1503169518}
   labelMissaoCompleta: {fileID: 301482371}
+  exibirCenaVitoria: 1
 --- !u!61 &1938229835
 BoxCollider2D:
   m_ObjectHideFlags: 0

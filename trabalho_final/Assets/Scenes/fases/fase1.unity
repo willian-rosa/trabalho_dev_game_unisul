@@ -188,7 +188,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -21.400032, y: 0}
+  m_AnchoredPosition: {x: -21.400055, y: 0}
   m_SizeDelta: {x: -583.1, y: 82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &67920246
@@ -3769,7 +3769,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6aaa366b7a3ca5f69e5058814ec2d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeRotacao: 40
 --- !u!50 &1924850229
 Rigidbody2D:
   serializedVersion: 4

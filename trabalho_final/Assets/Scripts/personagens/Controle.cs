@@ -4,13 +4,14 @@ using System.Collections;
 public class Controle : MonoBehaviour
 {
 
-    public static bool movimentarCamerera = true;
+    public static bool movimentarCamerera;
     
     private Camera viewCamera;
     private float velocidadeDescolamento = 2.0f;
-    public int velocidadeRotacao = 40;
 
-    void Start () {
+    void Start ()
+    {
+        movimentarCamerera = true;
         viewCamera = Camera.main;
     }
 
@@ -25,7 +26,6 @@ public class Controle : MonoBehaviour
 		
         transform.position = new Vector3(novoX, novoY, transform.position.z);
 
-        
         if (movimentarCamerera)
         {
             viewCamera.transform.position = new Vector3(novoX, novoY, viewCamera.transform.position.z);
@@ -33,7 +33,7 @@ public class Controle : MonoBehaviour
 
         Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
         Vector3 dir = Input.mousePosition - pos;
-        float angle = Mathf.Atan2(dir.y, dir.x) * velocidadeRotacao;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 		
     }

@@ -1,26 +1,36 @@
 Design
 
-	- poster (Gui)
+    - poster (Gui)
 
-	- 4 cenario (Bia, Gui)
-		1 para a primeira fase (casa inteira) 
-		1 para a segunda fase (casa inteira)
-		2 para a terceira fase (casa, porão)  
+    - 4 cenario (Bia, Gui)
+        1 para a primeira fase (casa inteira) 
+        1 para a segunda fase (casa inteira)
+        2 para a terceira fase (casa, porão)  
 
-	- hud do jogo (remover label bateria)
+    - hud do jogo (remover label bateria)
 
-	- Menu (Bia) - ok
-		play
-		creditos
-		sair
+    - Menu (Bia) - ok
+        play
+        creditos
+        sair
 
 Desenvolvimento
-	- colisões objetos (Bia, Gui) - ok
-	- mensagem game over (Bia) - ok
-	- mensagem vitoria (Bia) - ok 
-	- musicas (Bia) - ok
-	
-	- trocar cenarios e fases (Will)
-	- colisões paredes (will) - ok 
-	- luz lanterna não atravesar a parede (Will) - ok
-	- Fatasma (Will)
+    - colisões objetos (Bia, Gui) - ok
+    - mensagem game over (Bia) - ok
+    - mensagem vitoria (Bia) - ok 
+    - musicas (Bia) - ok
+    
+    - trocar cenarios e fases (Will)
+    - colisões paredes (will) - ok 
+    - luz lanterna não atravesar a parede (Will) - ok
+    - Fatasma (Will)
+
+
+    ----
+    - Arrumar bug na rotação  - ok
+    - Trocar fase - ok
+    - Arrumar o botão reiniciar fase (tentar de novo) - ok
+    - Acho melhor diminuir a quantidade baterias
+    - Arrumar mensagem de win - ok
+    - Colocar som do fantasma
+    - Colocar som quando pega a bateria
