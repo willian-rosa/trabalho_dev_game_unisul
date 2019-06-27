@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Interruptor : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Interruptor : MonoBehaviour
     private bool missaoCompletada;
     private Camera viewCamera;
     private float tempoMissaoCompletada;
+    public GameObject txtInterruptor;
 
     public Text labelMissaoCompleta;
     
@@ -26,8 +28,14 @@ public class Interruptor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dentro && Input.GetButtonDown("Fire1"))
+
+        if (dentro && !missaoCompletada) {
+            txtInterruptor.SetActive(true);
+        }
+
+        if (dentro && Input.GetKeyDown(KeyCode.F))
         {
+
             foreach (var lampada in lampadas)
             {
                 lampada.SetActive(true);
@@ -36,7 +44,7 @@ public class Interruptor : MonoBehaviour
             Controle.movimentarCamerera = false;
             tempoMissaoCompletada = Time.time; 
             missaoCompletada = true;
-
+            txtInterruptor.SetActive(false);
             labelMissaoCompleta.text = "Missão Completa";
 
         }
@@ -46,6 +54,9 @@ public class Interruptor : MonoBehaviour
             viewCamera.orthographicSize < 8f
         ){
             viewCamera.orthographicSize = viewCamera.orthographicSize + .02f;
+        }
+        if (viewCamera.orthographicSize == 7.513924f) {
+            SceneManager.LoadScene(2);
         }
     }
 
